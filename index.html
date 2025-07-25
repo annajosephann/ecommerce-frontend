@@ -5,11 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce Frontend</title>
     <link rel="stylesheet" href="styles/main.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our Online Store</h1>
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Logo Section -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Brand Logo" width="150">
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <form action="/search" method="GET">
+                        <input type="text" placeholder="Search products..." class="search-input">
+                        <button type="submit" class="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Shopping Cart -->
+                <div class="cart-icon">
+                    <a href="cart.html" class="cart-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Menu -->
+                <button class="hamburger-menu" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
     </header>
+
+    <main>
+        <h1>Welcome to Our Online Store</h1>
+        <!-- Your main content will go here -->
+    </main>
+
     <script src="scripts/app.js"></script>
 </body>
 </html>
